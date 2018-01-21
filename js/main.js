@@ -1,9 +1,7 @@
-// Fade Out Feedback Message Default //
-//$("#feedback").fadeOut(4000);
-
-
 // Math //
-function toInt(n){ return Math.round(Number(n)); };
+function toInt(n) {
+   return Math.round(Number(n));
+}
 
 /* VOLUME */
 
@@ -15,45 +13,50 @@ mediaClipNoise.volume = document.getElementById("noise-slider").value;
 mediaClipActivity.volume = document.getElementById("activity-slider").value;
 
 // Noise: Volume Update on Slide //
-   addEventListener("mousemove", function() {
-      mediaClipNoise.volume = document.getElementById("noise-slider").value;
-   });
-
+addEventListener("mousemove", function() {
+   mediaClipNoise.volume = document.getElementById("noise-slider").value;
+});
 
 // Activity: Volume Update on Slide//
-   addEventListener("mousemove", function() {
-      mediaClipActivity.volume = document.getElementById("activity-slider").value;
- 
-   });
-
+addEventListener("mousemove", function() {
+   mediaClipActivity.volume = document.getElementById("activity-slider").value;
+});
 
 // Activity: Feedback Update Text on Slide//
 function activityFunction() {
-   
    addEventListener("mousemove", function() {
-         document.getElementById("feedback").innerHTML = "Cabin Volume: " + toInt(mediaClipActivity.volume * 100) + "%";
-      
-      });
+      document.getElementById("feedback").innerHTML =
+         "Cabin Volume: " + toInt(mediaClipActivity.volume * 100) + "%";
+   });
 }
 
 // Noise: Feedback Update Text on Slide//
 function noiseFunction() {
-   
    addEventListener("mousemove", function() {
-         document.getElementById("feedback").innerHTML = "Noise Volume: " + toInt(mediaClipNoise.volume * 100) + "%";
-         
-      });
+      document.getElementById("feedback").innerHTML =
+         "Noise Volume: " + toInt(mediaClipNoise.volume * 100) + "%";
+   });
 }
 
-function feedbackFadeIn(){
-   $("#feedback").stop(true, true).fadeIn(100);
+/*Feedback Fade */
+
+$(document).ready(function() {
+   $("#feedback")
+      .stop(true, true)
+      .fadeOut(4000);
+});
+
+function feedbackFadeIn() {
+   $("#feedback")
+      .stop(true, true)
+      .fadeIn(100);
 }
 
-function feedbackFadeOut(){
-   $("#feedback").stop(true, true).fadeOut(500);
+function feedbackFadeOut() {
+   $("#feedback")
+      .stop(true, true)
+      .fadeOut(500);
 }
-
-
 
 /* SKY GRADIENT */
 var darkColors = new Array(
