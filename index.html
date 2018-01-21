@@ -7,20 +7,29 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WWQ6DZP');</script>
-<!-- End Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WWQ6DZP');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
     <audio loop autoplay id="audio-noise">
-        <source class="ogg" src="https://st1.asoftmurmur.com/assets/audio/main-rain.ogg" type="audio/ogg">
-        <div id="logo">
-            <p>If you are reading this, it is because your browser does not support the audio element.</p>
-        </div>
+        <source class="mp3g" src="audio/plane-noise.mp3" type="audio/mp3">
+        <p>If you are reading this, it is because your browser does not support the audio element.</p>
     </audio>
     <audio loop autoplay id="audio-activity">
         <source class="ogg" src="https://st3.asoftmurmur.com/assets/audio/main-wind.ogg" type="audio/ogg">
@@ -76,7 +85,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </body>
 <script type="text/javascript" src="js/main.js"></script>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWQ6DZP"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWQ6DZP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+
 </html>
