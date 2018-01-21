@@ -5,7 +5,7 @@
     <title>SLEEPJET - Plane sounds to fall alseep :)</title>
     <link rel="stylesheet" href="https://use.typekit.net/ixn7ljf.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 
@@ -16,19 +16,15 @@
             <p>If you are reading this, it is because your browser does not support the audio element.</p>
         </div>
     </audio>
-    <audio loop autoplay id="activity-noise">
+    <audio loop autoplay id="audio-activity">
         <source class="ogg" src="https://st3.asoftmurmur.com/assets/audio/main-wind.ogg" type="audio/ogg">
         <p>If you are reading this, it is because your browser does not support the audio element.</p>
     </audio>
     <div id="navbar">
         <div id="logo">
             <?xml version="1.0" encoding="UTF-8"?>
-            <svg width="90px" height="90px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-                <title>Artboard</title>
-                <desc>Created with Sketch.</desc>
-                <defs></defs>
-                <g id="Symbols" stroke="none" stroke-width="0.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="50px" height="50px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
                     <g id="Artboard" stroke="#fff">
                         <g id="Logo-SleepJet" transform="translate(1.000000, 4.000000)">
                             <path d="M9.99509415,5.62075506 L5.12764053,8.29976137 L4.90295768,8.15582803 C3.4344396,7.21508547 1.53224356,7.15333789 0,7.9966721 L4.0604631,12 L21.2927963,2.51546598 C21.9690711,2.14324993 22.2007799,1.31887894 21.8103325,0.674181838 C21.4198851,0.029484735 20.5551359,-0.191404806 19.8788612,0.180811241 L13.9068877,3.46773617 L4.06542439,1.1583144 L1.70764654,2.45601587 L9.99509415,5.62075506 L9.99509415,5.62075506 Z" id="Combined-Shape"></path>
@@ -43,13 +39,13 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
                     <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>
                 </svg>
-                <input type="range" onchange="setVolumeNoise()" min=0 max=1 step=0.01 value='0' class="slider" id="noise">
+                <input type="range" onmouseover="noiseFunction()" onmouseenter="feedbackFadeIn()" onmouseout="feedbackFadeOut()" min=0 max=1 step=0.01 value='0' class="slider" id="noise-slider">
             </div>
             <div class="slidecontainer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                 </svg>
-                <input type="range" onchange="setVolumeActivity()" min=0 max=1 step=0.01 value='0' class="slider" id="activity">
+                <input type="range" onmouseover="activityFunction()" onmouseenter="feedbackFadeIn()" onmouseout="feedbackFadeOut()" min=0 max=1 step=0.01 value='0' class="slider" id="activity-slider">
             </div>
         </div>
     </div>
@@ -71,6 +67,5 @@
         <p>© 2018 - made on Earth by <a href="https://celest.in/">celest.in</a>
             <p/>
             <div>
-</body>
 
 </html>
