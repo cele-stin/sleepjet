@@ -154,7 +154,7 @@ p {
    border-radius: 50%;
    background: #000;
    filter: drop-shadow(0px 0px 20px rgba(255,255,255,1));
-   animation: fly-over 50s infinite;
+   animation: fly-over 100s infinite;
    animation-delay: -20s;
 }
 
