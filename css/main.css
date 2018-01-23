@@ -64,6 +64,7 @@ p {
 
 .slider {
    -webkit-appearance: none;
+   -moz-appearance: none;
    width: 150px;
    height: 5px;
    border-radius: 15px;
@@ -71,6 +72,7 @@ p {
    outline: none;
    opacity: 0.6;
    -webkit-transition: 800ms;
+   -moz-transition: 800ms;
    transition: opacity 800ms;
 }
 
@@ -81,6 +83,7 @@ p {
 
 .slider::-webkit-slider-thumb {
    -webkit-appearance: none;
+   -moz-appearance: none;
    appearance: none;
    width: 18px;
    height: 18px;
@@ -190,7 +193,6 @@ p {
       rgba(255,255,255,0) 40%,
       rgba(255,255,255,0.4) 100%);
    border: 3px solid rgba(255,255,255,0.2);
-   );
    transform:scale(1.12,1.1);
    
 }
@@ -204,6 +206,7 @@ p {
    font-family: 'Space Mono', monospace;
    text-align: center;
    font-size: 10px;
+   color: rgb(255,255,255);
    color: rgba(255,255,255,0.3);
 }
 
@@ -225,8 +228,7 @@ color: rgba(255,255,255,0.3);
 a:hover {
   
     color: rgba(255,255,255,0.8);
-
+}
 /* selected link */
 a:active {
-    color: rgba(255,255,255,0.8);
-}
+    color: rgba(255,255,255,0.8);}
