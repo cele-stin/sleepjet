@@ -127,7 +127,7 @@ function updateGradient() {
       })
       .css({
          background:
-            "-moz-radial-gradient(circle farthest-corner at 0% 100% , " +
+            "-webkit-radial-gradient(circle farthest-corner at 0% 100% , " +
             color2 +
             " , " +
             color1 +
