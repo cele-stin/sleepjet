@@ -3,10 +3,46 @@ function toInt(n) {
    return Math.round(Number(n));
 }
 
+
+
+
+
 /* VOLUME */
 
 var mediaClipNoise = document.getElementById("audio-noise");
 var mediaClipActivity = document.getElementById("audio-activity");
+
+
+//initial play//
+var isPlaying = false;
+
+function togglePlay() {
+  if (isPlaying) {
+    mediaClipNoise.pause()
+  } else {
+    mediaClipNoise.play();
+  }
+  if (isPlaying) {
+    mediaClipActivity.pause()
+  } else {
+    mediaClipActivity.play();
+  }
+};
+
+mediaClipNoise.onplaying = function() {
+  isPlaying = true;
+};
+mediaClipNoise.onpause = function() {
+  isPlaying = false;
+};
+mediaClipActivity.onplaying = function() {
+  isPlaying = true;
+};
+mediaClipActivity.onpause = function() {
+  isPlaying = false;
+};
+
+
 
 //initial volume//
 mediaClipNoise.volume = document.getElementById("noise-slider").value;
@@ -154,3 +190,5 @@ function updateGradient() {
 }
 
 setInterval(updateGradient, 10);
+
+

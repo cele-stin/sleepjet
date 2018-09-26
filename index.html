@@ -75,27 +75,29 @@
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWQ6DZP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <audio loop autoplay preload="auto" id="audio-noise">
+    <audio loop preload="auto" id="audio-noise">
         <source src="audio/plane-noise-20.mp3" type="audio/mp3">
         <p>If you are reading this, it is because your browser does not support the audio element.</p>
     </audio>
-    <audio loop autoplay preload="auto" id="audio-activity">
+    <audio loop preload="auto" id="audio-activity">
         <source src="audio/cabin-noise-20.mp3" type="audio/mp3">
         <p>If you are reading this, it is because your browser does not support the audio element.</p>
     </audio>
     <div id="navbar">
         <div id="logo">
+            <a onClick="togglePlay()">
             <?xml version="1.0" encoding="UTF-8"?>
-            <svg width="50px" height="50px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="50px" height="50px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="takeoff">
                 <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
                     <g id="Artboard" stroke="#fff">
                         <g id="Logo-SleepJet" transform="translate(1.000000, 4.000000)">
-                            <path d="M9.99509415,5.62075506 L5.12764053,8.29976137 L4.90295768,8.15582803 C3.4344396,7.21508547 1.53224356,7.15333789 0,7.9966721 L4.0604631,12 L21.2927963,2.51546598 C21.9690711,2.14324993 22.2007799,1.31887894 21.8103325,0.674181838 C21.4198851,0.029484735 20.5551359,-0.191404806 19.8788612,0.180811241 L13.9068877,3.46773617 L4.06542439,1.1583144 L1.70764654,2.45601587 L9.99509415,5.62075506 L9.99509415,5.62075506 Z" id="Combined-Shape"></path>
-                            <path d="M21,9.79953295 C20.4689539,9.30333983 19.7579803,9 18.976708,9 C17.3327176,9 16,10.3431458 16,12 C16,13.6568542 17.3327176,15 18.976708,15 C19.7579803,15 20.4689539,14.6966602 21,14.200467 C20.8105666,14.2523248 20.6112541,14.28 20.4055278,14.28 C19.1560951,14.28 18.1432298,13.2592092 18.1432298,12 C18.1432298,10.7407908 19.1560951,9.72 20.4055278,9.72 C20.6112541,9.72 20.8105666,9.74767517 21,9.79953295 L21,9.79953295 Z" id="Combined-Shape"></path>
+                            <path d="M9.99509415,5.62075506 L5.12764053,8.29976137 L4.90295768,8.15582803 C3.4344396,7.21508547 1.53224356,7.15333789 0,7.9966721 L4.0604631,12 L21.2927963,2.51546598 C21.9690711,2.14324993 22.2007799,1.31887894 21.8103325,0.674181838 C21.4198851,0.029484735 20.5551359,-0.191404806 19.8788612,0.180811241 L13.9068877,3.46773617 L4.06542439,1.1583144 L1.70764654,2.45601587 L9.99509415,5.62075506 L9.99509415,5.62075506 Z" id="jet"></path>
+                            <path d="M21,9.79953295 C20.4689539,9.30333983 19.7579803,9 18.976708,9 C17.3327176,9 16,10.3431458 16,12 C16,13.6568542 17.3327176,15 18.976708,15 C19.7579803,15 20.4689539,14.6966602 21,14.200467 C20.8105666,14.2523248 20.6112541,14.28 20.4055278,14.28 C19.1560951,14.28 18.1432298,13.2592092 18.1432298,12 C18.1432298,10.7407908 19.1560951,9.72 20.4055278,9.72 C20.6112541,9.72 20.8105666,9.74767517 21,9.79953295 L21,9.79953295 Z" id="moon"></path>
                         </g>
                     </g>
                 </g>
             </svg>
+            </a>
         </div>
         <div id="sliders">
             <div class="slidecontainer">

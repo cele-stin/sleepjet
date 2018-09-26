@@ -60,6 +60,16 @@ p {
            filter: drop-shadow(0px 0px 20px rgba(255,255,255,1));
 }
 
+#moon {
+   transform: translate(-14px, 0px);
+   transition: transform ease-in-out 2sec;
+}
+#plane {
+   
+   transition: transform ease-in-out 2sec;
+   transform-origin: 50% 25%;
+}
+
 #sliders {
    height: 100%;
    -webkit-box-align: center;
