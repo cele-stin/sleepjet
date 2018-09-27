@@ -4,7 +4,10 @@ function toInt(n) {
 }
 
 
-
+$("#logo").click(function() {
+  $("#jet").toggleClass('jet-takeoff jet-landing');
+  $("#moon").toggleClass('moon-takeoff moon-landing');
+});
 
 
 /* VOLUME */

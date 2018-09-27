@@ -44,6 +44,8 @@ p {
 
 #logo{
    margin-left: 50px; 
+   width: 50px;
+   height:50px;
    opacity: 0.8;
    -webkit-transition: opacity 800ms, -webkit-filter 800ms;
    transition: opacity 800ms, -webkit-filter 800ms;
@@ -53,6 +55,31 @@ p {
    cursor: pointer;
    
 }
+
+.vector-logo {
+  position: absolute;
+  transition: all 1s ease-in-out
+}
+
+#jet{
+  transform-origin: 25px;
+}
+
+.jet-takeoff{
+   transform: rotate(0deg) 
+}
+.jet-landing{
+    transform: rotate(60deg) 
+}
+
+.moon-takeoff{
+   transform: rotate(0deg) 
+}
+.moon-landing{
+    transform: translate(-30px, 0px);
+}
+
+
 
 #logo:hover, #logo:active{
    opacity: 1;
