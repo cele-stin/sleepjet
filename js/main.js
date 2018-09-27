@@ -3,6 +3,7 @@ function toInt(n) {
    return Math.round(Number(n));
 }
 
+// ON OFF ANIMATION //
 
 $("#logo").click(function() {
   $("#jet").toggleClass('jet-takeoff jet-landing');
